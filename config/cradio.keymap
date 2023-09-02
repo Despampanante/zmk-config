@@ -6,8 +6,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 #define default 0
 #define NAV 1
@@ -56,7 +54,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ ,        │ .        │ /        │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt NUM TAB   &lt NAV SPACE     &lt SYM ENTER  &lt 1 BSPC
+                                            &lt NUM TAB   &lt NAV SPACE     &lt SYM ENTER  &lt NUM BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
