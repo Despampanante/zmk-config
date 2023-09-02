@@ -59,13 +59,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │ {        │ }        │ (        │  )       │
-            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp trans  &kp RBRKT  &kp PG_UP  &kp END    &kp COLON
+            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp trans  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  [       │ ]        │ <        │ >        │
-            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &trans     &trans     &trans     &trans     &trans
+            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &trans     &kp LBKT   &kp RBKT   &kp LT     &kp RT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &trans    &kp trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -76,7 +76,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │ 7        │ 8        │ 9        │          │
-            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp trans  &kp RBRKT  &kp PG_UP  &kp END    &kp COLON
+            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp trans  &trans  &trans  &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ 4        │ 5        │ 6        │          │
             &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
@@ -93,7 +93,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │ 7        │ 8        │ 9        │          │
-            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp trans  &kp RBRKT  &kp PG_UP  &kp END    &kp COLON
+            &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp trans  &trans  &kp PG_UP  &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ 4        │ 5        │ 6        │          │
             &kp trans  &kp trans  &kp trans  &kp trans  &kp trans      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
