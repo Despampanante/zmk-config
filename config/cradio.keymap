@@ -65,7 +65,7 @@
             &trans  &trans  &trans  &trans  &trans      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  [       │ ]        │ <        │ >        │
-            &trans  &trans  &trans  &trans  &trans      &trans     &kp LBKT   &kp RBKT   &kp LT     &kp RT
+            &trans  &trans  &trans  &trans  &trans      &trans     &kp LBKT   &kp RBKT   &kp LT     &kp GT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &trans    &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
