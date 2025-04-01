@@ -112,84 +112,84 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
-            label = "Aptmak";
-            bindings = <
-                &key_repeat &kp W      &kp F      &kp P      &kp B           &kp J      &kp L       &kp U      &kp Y      &kp SQT
-                &kp R       &kp S      &kp T      &kp H      &kp K           &kp X      &kp N       &kp A      &kp I      &kp O
-                            &kp C      &kp G      &kp D                                 &kp M       &kp COMMA  &kp DOT
-                                                  &mo NAV    &kp SPACE       &kp E      &mo SYM
-            >;
-        };
+    base_layer {
+        label = "Aptmak";
+        bindings = <
+            &key_repeat &kp W      &kp F      &kp P      &kp B           &kp J      &kp L       &kp U      &kp Y      &kp SQT
+            &kp R       &kp S      &kp T      &kp H      &kp K           &kp X      &kp N       &kp A      &kp I      &kp O
+            &none       &kp C      &kp G      &kp D      &none           &none      &kp M       &kp COMMA  &kp DOT    &none
+                                              &mo NAV    &kp SPACE       &kp E      &mo SYM
+        >;
+    };
 
-        game_layer {
-            label = "Game";
-            bindings = <
-                &kp T       &kp Q      &kp W      &kp E      &kp R           &kp Y      &kp U       &kp I      &kp O      &kp P
-                &kp LSHFT   &kp A      &kp S      &kp D      &kp F           &kp H      &kp J       &kp K      &kp L      &kp O
-                            &kp Z      &kp X      &kp C                                 &kp M       &kp COMMA  &kp DOT
-                                                  &mo NAV    &kp SPACE       &kp N      &mo SYM
-            >;
-        };
+    game_layer {
+        label = "Game";
+        bindings = <
+            &kp T       &kp Q      &kp W      &kp E      &kp R           &kp Y      &kp U       &kp I      &kp O      &kp P
+            &kp LSHFT   &kp A      &kp S      &kp D      &kp F           &kp H      &kp J       &kp K      &kp L      &kp O
+            &none       &kp Z      &kp X      &kp C      &none           &none      &kp M       &kp COMMA  &kp DOT    &none
+                                              &mo NAV    &kp SPACE       &kp N      &mo SYM
+        >;
+    };
 
-        nav_layer {
-            label = "Navigation";
-            bindings = <
-               &kp S_PRV   &kp C_S_TAB  &kp TAB      &kp CTRL_TAB  &kp S_NXT      &kp PG_UP &kp HOME   &kp UP     &kp END      &kp DEL
-               &sk LGUI    &sk LALT     &sk LCTL     &sk LSHFT     &none          &kp PG_DN &kp LEFT   &kp DOWN   &kp RIGHT    &kp RET
-                           &kp LC(X)    &kp LC(C)    &kp LC(V)                              &kp BSPC   &trans     &trans
-                                                     &trans        &mo SPEC       &kp RET   &trans
-            >;
-        };
+    nav_layer {
+        label = "Navigation";
+        bindings = <
+           &kp S_PRV   &kp C_S_TAB  &kp TAB      &kp CTRL_TAB  &kp S_NXT      &kp PG_UP &kp HOME   &kp UP     &kp END      &kp DEL
+           &sk LGUI    &sk LALT     &sk LCTL     &sk LSHFT     &none          &kp PG_DN &kp LEFT   &kp DOWN   &kp RIGHT    &kp RET
+           &none       &kp LC(X)    &kp LC(C)    &kp LC(V)     &none          &none      &kp BSPC   &trans     &trans       &none
+                                             &trans        &mo SPEC       &kp RET   &trans
+        >;
+    };
 
-        sym_layer {
-            label = "Symbols";
-            bindings = <
-               &kp GRAVE  &kp PRCNT   &kp QMARK   &kp COLON   &kp AT         &kp CARET   &kp SEMI    &kp LPAR   &kp RPAR   &kp TILDE
-               &kp EXCL   &kp PLUS    &kp MINUS   &kp EQUAL   &kp HASH       &kp UNDER   &sk LSHFT   &sk LCTL   &sk LALT   &sk LGUI 
-                          &kp DLLR    &kp ASTRK   &kp FSLH                               &kp BSLH    &kp PIPE   &kp AMPS
-                                                  &trans      &trans         &mo SPEC    &trans
-            >;
-        };
+    sym_layer {
+        label = "Symbols";
+        bindings = <
+           &kp GRAVE  &kp PRCNT   &kp QMARK   &kp COLON   &kp AT         &kp CARET   &kp SEMI    &kp LPAR   &kp RPAR   &kp TILDE
+           &kp EXCL   &kp PLUS    &kp MINUS   &kp EQUAL   &kp HASH       &kp UNDER   &sk LSHFT   &sk LCTL   &sk LALT   &sk LGUI 
+           &none      &kp DLLR    &kp ASTRK   &kp FSLH    &none          &none       &kp BSLH    &kp PIPE   &kp AMPS   &none
+                                          &trans      &trans         &mo SPEC    &trans
+        >;
+    };
 
-        num_layer {
-            label = "Numbers";
-            bindings = <
-                &none   &kp N7  &kp N8  &kp N9  &none         &none   &kp EQUAL  &kp LT    &kp GT    &none
-                &none   &kp N4  &kp N5  &kp N6  &none         &none   &sk LSHFT  &sk LCTL  &sk LALT  &sk LGUI
-                        &kp N1  &kp N2  &kp N3                        &kp N0     &kp LBKT  &kp RBKT
-                                        &trans  &trans        &trans  &trans
-            >;
-        };
+    num_layer {
+        label = "Numbers";
+        bindings = <
+            &none   &kp N7  &kp N8  &kp N9  &none         &none   &kp EQUAL  &kp LT    &kp GT    &none
+            &none   &kp N4  &kp N5  &kp N6  &none         &none   &sk LSHFT  &sk LCTL  &sk LALT  &sk LGUI
+            &none   &kp N1  &kp N2  &kp N3  &none         &none   &kp N0     &kp LBKT  &kp RBKT  &none
+                                    &trans  &trans        &trans  &trans
+        >;
+    };
 
-        numpd_layer {
-            label = "NumPad";
-            bindings = <
-                &none     &kp N7      &kp N8      &kp N9       &none         &kp KP_ASTERISK &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS
-                &kp LGUI  &mt LALT N4 &mt LCTL N5 &mt LSHFT N6 &kp N0        &kp KP_SLASH    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS
-                          &kp N1      &kp N2      &kp N3                                     &kp KP_N1   &kp KP_N2   &kp KP_N3
-                                                  &trans       &trans        &kp KP_DOT      &kp KP_N0
-            >;
-        };
+    numpd_layer {
+        label = "NumPad";
+        bindings = <
+            &none     &kp N7      &kp N8      &kp N9       &none         &kp KP_ASTERISK &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS
+            &kp LGUI  &mt LALT N4 &mt LCTL N5 &mt LSHFT N6 &kp N0        &kp KP_SLASH    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS
+            &none     &kp N1      &kp N2      &kp N3       &none         &none           &kp KP_N1   &kp KP_N2   &kp KP_N3   &none
+                                      &trans       &trans        &kp KP_DOT      &kp KP_N0
+        >;
+    };
 
-        fun_layer {
-            label = "F-keys";
-            bindings = <
-               &kp F12    &kp F7    &kp F8   &kp F9   &kp F10        &kp KP_NUM  &kp INS     &kp PSCRN  &kp SLCK   &kp PAUSE_BREAK
-               &kp F11    &kp F4    &kp F5   &kp F6   &kp K_APP      &none       &sk LSHFT   &sk LCTL   &sk LALT   &sk LGUI
-                          &kp F1    &kp F2   &kp F3                              &none       &none      &none
-                                             &trans   &kp ESC        &trans      &trans
-            >;
-        };
+    fun_layer {
+        label = "F-keys";
+        bindings = <
+           &kp F12    &kp F7    &kp F8   &kp F9   &kp F10        &kp KP_NUM  &kp INS     &kp PSCRN  &kp SLCK   &kp PAUSE_BREAK
+           &kp F11    &kp F4    &kp F5   &kp F6   &kp K_APP      &none       &sk LSHFT   &sk LCTL   &sk LALT   &sk LGUI
+           &none      &kp F1    &kp F2   &kp F3   &none          &none       &none       &none      &none      &none
+                                     &trans   &kp ESC        &trans      &trans
+        >;
+    };
 
-       spec_layer {
-            label = "Settings";
-            bindings = <
-               &bootloader &sys_reset    &none        &none   &to BASE    &out OUT_USB &out OUT_BLE &none        &sys_reset   &bootloader
-               &none       &kp C_VOL_DN  &kp C_VOL_UP &none   &to GAME    &bt BT_CLR   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-                           &kp C_BRI_DEC &kp C_BRI_UP &none                            &none        &none        &none
-                                                      &trans  &trans      &trans       &trans
-            >;
-        };
+    spec_layer {
+        label = "Settings";
+        bindings = <
+           &bootloader &sys_reset    &none        &none   &to BASE    &out OUT_USB &out OUT_BLE &none        &sys_reset   &bootloader
+           &none       &kp C_VOL_DN  &kp C_VOL_UP &none   &to GAME    &bt BT_CLR   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+           &none       &kp C_BRI_DEC &kp C_BRI_UP &none   &none       &none        &none        &none        &none        &none
+                                              &trans  &trans      &trans       &trans
+        >;
+    };
     };
 };
