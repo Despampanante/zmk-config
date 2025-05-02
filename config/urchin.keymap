@@ -1,2 +1,2 @@
-#include "keypos_def/keypos_30keys.h"
+#include "keypos_def/keypos_34keys.h"
 #include "includes/base_caksoylar.dtsi"
