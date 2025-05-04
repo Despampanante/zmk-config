@@ -29,14 +29,49 @@
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
 
+// ZMK_BASE_LAYER(Base,
+// //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+//     &kp B         &kp F         &kp L         &kp K         &kp Q       ,   &kp P         &kp G         &kp O         &kp U         &kp DOT     ,
+// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//     &kp N         &kp S         &kp H         &kp T         &kp M   ,       &kp Y         &kp C         &kp A         &kp E         &kp I ,
+// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//     &kp X         &kp V         &kp J         &kp D         &kp Z       ,   &kp SQT       &kp W         &kp SEMI      &kp SLASH    &kp COMMA    ,
+// //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+//                                               &kp BSPC      &kp R       ,   &kp SPACE     &kp TAB
+// //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
+// )
+
+
+//whirl (lenchog) (6 likes)
+// q g d f v  z l u o y
+// n s t h m  ' r e a i
+// b c p w k  x j ; . ,
+//              *  
+//Magic rules: wh gs ue y, aa bb cc dd ee ff hh ii jj ll mm nn oo pp qq rr ss tt vv xx zz
+ {
+    behaviors {
+        ak_magic: ak_magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            akt_ah { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H; };
+            akt_uh { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_eh { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+            akt_eh { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+
+        };
+    };
+ };
+
 ZMK_BASE_LAYER(Base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp B         &kp F         &kp L         &kp K         &kp Q       ,   &kp P         &kp G         &kp O         &kp U         &kp DOT     ,
+    &kp Q         &kp G         &kp D         &kp F         &kp V       ,   &kp Z         &kp L         &kp U         &kp O         &kp Y       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp N         &kp S         &kp H         &kp T         &kp M   ,       &kp Y         &kp C         &kp A         &kp E         &kp I ,
+    &kp N         &kp S         &kp T         &kp H         &kp M       ,   &kp SQT       &kp R         &kp E         &kp A         &kp I       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp X         &kp V         &kp J         &kp D         &kp Z       ,   &kp SQT       &kp W         &kp SEMI      &kp SLASH    &kp COMMA    ,
+    &kp B         &kp C         &kp P         &kp W         &kp K       ,   &kp X         &kp J         &kp SEMI      &kp DOT       &kp COMMA   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &kp BSPC      &kp R       ,   &kp SPACE     &kp TAB
+                                              &kp BSPC      &kp SPACE   ,   &ak_magic     &kp akTAB
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
