@@ -55,10 +55,10 @@
             #binding-cells = <0>;
             bindings = <&key_repeat>;
 
-            akt_ah { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H; };
-            akt_uh { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
-            akt_eh { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
-            akt_eh { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+            akt_WM { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+            akt_GM { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_UM { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+            akt_YM { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
 
         };
     };
