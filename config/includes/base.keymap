@@ -238,6 +238,7 @@ ZMK_BASE_LAYER(Base,
             akt_TDOT { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp DOT &kp DEAD1>; };
     };
  };
+ }
 ZMK_BASE_LAYER(Def2,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp B         &kp G         &dot_morph    &kp Z       ,   &kp V         &kp W         &kp O         &kp Y         &kp F       ,
