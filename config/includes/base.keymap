@@ -214,19 +214,20 @@ ZMK_BASE_LAYER(Base,
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
-  // q w e r t  y u i o p [ ] \
-  //  a s d f g  h j k l ; '    
-  //   z x c v b  n m , . / 
-// QWERTY
+//  q b g . z  v w o y f
+//   r n s t m  k * a i h
+//   l p d c j  x u ; , '
+//                e    
+// Chog
 ZMK_BASE_LAYER(Def2,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp W         &kp E         &kp R         &kp T       ,   &kp Y         &kp U         &kp I         &kp O         &kp P       ,
+    &kp V         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F  &kp G       ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L   &hmr LGUI SQT ,
+    &hml LGUI R   &hml LALT S   &hml LSHFT T  &hml LCTRL H  &kp K       ,   &kp X         &hmr LCTRL N  &hmr RSHFT A  &hmr LALT I   &hmr LGUI O ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &comma_morph  &dot_morph    &qexcl      ,
+    &kp SEMI      &kp C         &kp G         &kp D         &kp Q       ,   &kp Z         &kp M         &comma_morph  &dot_morph    &kp SLASH   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                               SMART_NUM    &lt NAV R   ,   &lt_spc FN 0  MAGIC_SHIFT
+                                               SMART_NUM    &lt_spc FN 0 ,   &lt NAV E   MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
