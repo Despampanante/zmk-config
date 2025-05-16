@@ -220,12 +220,14 @@ ZMK_BASE_LAYER(Base,
 //                e    
 // Chog
 // magic rl, y,, ds, gs, ct, ou, *w, t.
+#define DEAD1 F21
  / {
     behaviors {
         ak_chog: ak_chog {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
+            dead-keys = <DEAD1>;
             akt_RL { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L &kp DEAD1>; };
             akt_YCOMMA { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA &kp DEAD1>; };
             akt_DS { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp S &kp DEAD1>; };
