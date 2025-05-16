@@ -214,18 +214,45 @@ ZMK_BASE_LAYER(Base,
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
-//  q b g . z  v w o y f
+//   q b g . z  v w o y f
 //   r n s t m  k * a i h
 //   l p d c j  x u ; , '
 //                e    
 // Chog
+// magic rl, y,, ds, gs, ct, ou, *w, t.
+ / {
+    behaviors {
+        ak_chog: ak_chog {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+            akt_RL { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L &kp DEAD1>; };
+            akt_YCOMMA { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA &kp DEAD1>; };
+            akt_DS { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp S &kp DEAD1>; };
+            akt_GS { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S &kp DEAD1>; };
+            akt_CT { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp T &kp DEAD1>; };
+            akt_OU { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp U &kp DEAD1>; };
+            akt_DEAD1W { trigger-keys = <DEAD1>; max-prior-idle-ms = <300>; bindings = <&kp W &kp DEAD1>; };
+            akt_TDOT { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp DOT &kp DEAD1>; };
+
+
+        };
+        ak_magic3: ak_magic3 {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            
+        };
+    };
+ };
 ZMK_BASE_LAYER(Def2,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp V         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT     ,
+    &kp Q         &kp B         &kp G         &dot_morph    &kp Z       ,   &kp V         &kp W         &kp O         &kp Y         &kp F       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI R   &hml LALT S   &hml LSHFT T  &hml LCTRL H  &kp K       ,   &kp X         &hmr LCTRL N  &hmr RSHFT A  &hmr LALT I   &hmr LGUI O ,
+    &hml LGUI R   &hml LALT N   &hml LSHFT S  &hml LCTRL T  &kp M       ,   &kp K         &hmr LCTRL U  &hmr RSHFT A  &hmr LALT I   &hmr LGUI H ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp SEMI      &kp C         &kp G         &kp D         &kp Q       ,   &kp Z         &kp M         &comma_morph  &dot_morph    &kp SLASH   ,
+    &kp L         &kp P         &kp D         &kp C         &kp J       ,   &kp X         &ak_chog      &comma_morph  &dot_morph    &kp SQT     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                SMART_NUM    &lt_spc FN 0 ,   &lt NAV E   MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
