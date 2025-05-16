@@ -236,9 +236,9 @@ ZMK_BASE_LAYER(Base,
             akt_OU { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp U &kp DEAD1>; };
             akt_DEAD1W { trigger-keys = <DEAD1>; max-prior-idle-ms = <300>; bindings = <&kp W &kp DEAD1>; };
             akt_TDOT { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp DOT &kp DEAD1>; };
+        };
     };
  };
- }
 ZMK_BASE_LAYER(Def2,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp B         &kp G         &dot_morph    &kp Z       ,   &kp V         &kp W         &kp O         &kp Y         &kp F       ,
