@@ -239,13 +239,15 @@ ZMK_BASE_LAYER(Base,
         };
     };
  };
+MAKE_HRM_MAGIC(hmrM, &kp, &ak_chog, KEYS_L THUMBS) // Right-hand HRMs with magic.
+
 ZMK_BASE_LAYER(Def2,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp B         &kp G         &dot_morph    &kp Z       ,   &kp V         &kp W         &kp O         &kp Y         &kp F       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI R   &hml LALT N   &hml LSHFT S  &hml LCTRL T  &kp M       ,   &kp K         &hmr LCTRL U  &hmr RSHFT A  &hmr LALT I   &hmr LGUI H ,
+    &hml LGUI R   &hml LALT N   &hml LSHFT S  &hml LCTRL T  &kp M       ,   &kp K         &hmrM LCTRL 0  &hmr RSHFT A  &hmr LALT I   &hmr LGUI H ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp L         &kp P         &kp D         &kp C         &kp J       ,   &kp X         &ak_chog      &comma_morph  &dot_morph    &kp SQT     ,
+    &kp L         &kp P         &kp D         &kp C         &kp J       ,   &kp X         &kp U      &comma_morph  &dot_morph    &kp SQT     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                SMART_NUM    &lt_spc FN 0 ,   &lt NAV E   MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
