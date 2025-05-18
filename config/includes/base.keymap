@@ -239,7 +239,7 @@ ZMK_BASE_LAYER(Base,
         };
     };
  };
-MAKE_HRM_MAGIC(hmrM, &kp, &ak_chog, KEYS_L THUMBS) // Right-hand HRMs with magic.
+MAKE_HRM(hmrM, &kp, &ak_chog, KEYS_L THUMBS) // Right-hand HRMs with magic.
 
 ZMK_BASE_LAYER(Def2,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
