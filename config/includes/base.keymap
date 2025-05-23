@@ -14,7 +14,6 @@
 // #include "zmk-helpers/unicode-chars/greek.dtsi"
 // #include "zmk-helpers/unicode-chars/german.dtsi"
 
-#define DEFs 0 1
 #define DEF 0
 #define DEF2 1
 #define NAV 2
@@ -23,6 +22,7 @@
 #define NUM 5
 #define SYS 6 
 #define MOUSE 7
+#define DEFs DEF DEF2
 
 #define XXX &none
 #define ___ &trans
