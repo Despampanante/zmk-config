@@ -87,40 +87,51 @@
 // ab* -> abo or abo* -> abou (or ab* -> about)
 // io* -> ion* (or i* -> ion) 
 
- / {
-    behaviors {
-        ak_magic2: ak_magic2 {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&key_repeat>;
+//  / {
+//     behaviors {
+//         ak_magic2: ak_magic2 {
+//             compatible = "zmk,behavior-adaptive-key";
+//             #binding-cells = <0>;
+//             bindings = <&key_repeat>;
 
-            akt_CT{ trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_YO { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
-            akt_BY { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
-            akt_ER { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };b
-            akt_NO { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
-            akt_UI { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
-            akt_JO { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+//             akt_CT{ trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+//             akt_YO { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+//             akt_BY { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+//             akt_ER { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };b
+//             akt_NO { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+//             akt_UI { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+//             akt_JO { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
 
 
-        };
-        ak_magic3: ak_magic3 {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&key_repeat>;
+//         };
+//         ak_magic3: ak_magic3 {
+//             compatible = "zmk,behavior-adaptive-key";
+//             #binding-cells = <0>;
+//             bindings = <&key_repeat>;
 
             
-        };
-    };
- };
+//         };
+//     };
+//  };
+// ZMK_BASE_LAYER(Base,
+// //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+//     &kp V         &kp L         &kp T         &kp W         &kp X       ,   &kp F         &kp K         &kp O         &kp I         &kp B       ,
+// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//     &kp R         &kp M         &kp C         &kp S         &kp G       ,   &kp P         &kp H         &kp A         &kp U         &kp N       ,
+// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//     &kp Z         &kp SEMI      &kp COMMA     &ak_magic2    &kp Q       ,   &kp SQT       &kp D         &kp DOT       &kp Y         &kp J       ,
+// //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+//                                               &kp BSPC      &kp E       ,   &kp SPACE    &kp TAB
+// //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
+// )
 ZMK_BASE_LAYER(Base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp V         &kp L         &kp T         &kp W         &kp X       ,   &kp F         &kp K         &kp O         &kp I         &kp B       ,
+    &kp Q         &kp W         &kp E         &kp R         &kp T       ,   &kp Y         &kp U         &kp I         &kp O         &kp P       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp R         &kp M         &kp C         &kp S         &kp G       ,   &kp P         &kp H         &kp A         &kp U         &kp N       ,
+    &kp A         &kp S         &kp D         &kp F         &kp G       ,   &kp H         &kp J         &kp K         &kp L         &kp SEMI    ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp SEMI      &kp COMMA     &ak_magic2    &kp Q       ,   &kp SQT       &kp D         &kp DOT       &kp Y         &kp J       ,
+    &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &kp BSPC      &kp E       ,   &kp SPACE    &kp TAB
+                                              &kp BSPC      &kp BSPC    ,   &kp SPACE     &kp ENTER
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
