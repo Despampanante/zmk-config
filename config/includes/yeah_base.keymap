@@ -309,9 +309,9 @@
 
         Fn {
             bindings = <LAYER_FROM36( \
-  &none,    &trans,   &trans,   &trans,   &trans,     &trans,   &trans,   &trans,   &trans,   &kp F19,  &trans,        \
-  &kp F4,   &kp F3,   &kp F2,   &kp F1,   &kp F5,     &kp F6,   &kp F10,  &kp F7,   &kp F8,   &kp F9,   &trans,        \
-  &kp F14,  &kp F13,  &kp F12,  &kp F11,  &kp F15,    &kp F16,  &kp F20,  &kp F17,  &kp F18,  &trans,   &trans,        \
+  &none,    &trans,   &trans,   &trans,   &trans,     &trans,   &trans,   &trans,   &trans,   &kp F19,       \
+  &kp F4,   &kp F3,   &kp F2,   &kp F1,   &kp F5,     &kp F6,   &kp F10,  &kp F7,   &kp F8,   &kp F9,        \
+  &kp F14,  &kp F13,  &kp F12,  &kp F11,  &kp F15,    &kp F16,  &kp F20,  &kp F17,  &kp F18,  &trans,        \
                              &trans,   &trans,   &trans,     &trans,   &trans,   &trans \
 			)>;
 
