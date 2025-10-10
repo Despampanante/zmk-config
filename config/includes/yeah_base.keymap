@@ -250,9 +250,9 @@
             display-name = "Alphabet";
 
             bindings = <LAYER_FROM36( \
-&trans,  &none,  &sl 5,        &sl 3,        &sl 4,        &none,                        &none,            &ht_npi BACKSLASH SLASH,  &ht LEFT_BRACKET COMMA,  &ht RIGHT_BRACKET DOT,  &htr RCTRL G,  &trans,        \
-&trans,  &kp M,  &ht_npi J S,  &ht_npi V R,  &ht_npi B T,  &ht_npi TAB Q,                &kp Y,            &htr RGUI E,              &htrs RIGHT_SHIFT A,     &htr RALT H,            &kp P,         &trans,        \
-&trans,  &kp F,  &ht_ck 0 C,   &ht_npi W L,  &ht_npi K D,  &kp ESCAPE,                   &kp BSPC,         &ht_ing 0 I,              &kp O,                   &ht_qu 0 U,             &none,         &trans,        \
+  &none,  &sl 5,        &sl 3,        &sl 4,        &none,                        &none,            &ht_npi BACKSLASH SLASH,  &ht LEFT_BRACKET COMMA,  &ht RIGHT_BRACKET DOT,  &htr RCTRL G,       \
+  &kp M,  &ht_npi J S,  &ht_npi V R,  &ht_npi B T,  &ht_npi TAB Q,                &kp Y,            &htr RGUI E,              &htrs RIGHT_SHIFT A,     &htr RALT H,            &kp P,              \
+  &kp F,  &ht_ck 0 C,   &ht_npi W L,  &ht_npi K D,  &kp ESCAPE,                   &kp BSPC,         &ht_ing 0 I,              &kp O,                   &ht_qu 0 U,             &none,              \
                                &none,        &lt 1 N,      &ht_npi DOUBLE_QUOTES SQT,    &sk RIGHT_SHIFT,  &lt 2 SPACE,              &none \
 			)>;
 
@@ -263,9 +263,9 @@
             display-name = "SymNum";
 
             bindings = <LAYER_FROM36( \
-&trans,  &trans,               &trans,             &trans,                &trans,                                  &trans,            &none,               &trans,          &trans,            &trans,                &trans,  &trans,        \
-&trans,  &ht DOLLAR NUMBER_4,  &ht HASH NUMBER_3,  &ht AT_SIGN NUMBER_2,  &ht EXCLAMATION NUMBER_1,                &ht PERCENT N5,    &ht CARET NUMBER_6,  &kp N0,          &ht AMPERSAND N7,  &ht ASTERISK N8,       &kp N9,  &trans,        \
-&trans,  &trans,               &ht TILDE GRAVE,    &ht COLON SEMICOLON,   &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS,  &trans,            &sk RGUI,            &ht PLUS EQUAL,  &ht_npi Z X,       &ht UNDERSCORE MINUS,  &trans,  &trans,        \
+&trans,               &trans,             &trans,                &trans,                                  &trans,            &none,               &trans,          &trans,            &trans,                &trans,         \
+&ht DOLLAR NUMBER_4,  &ht HASH NUMBER_3,  &ht AT_SIGN NUMBER_2,  &ht EXCLAMATION NUMBER_1,                &ht PERCENT N5,    &ht CARET NUMBER_6,  &kp N0,          &ht AMPERSAND N7,  &ht ASTERISK N8,       &kp N9,         \
+&trans,               &ht TILDE GRAVE,    &ht COLON SEMICOLON,   &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS,  &trans,            &sk RGUI,            &ht PLUS EQUAL,  &ht_npi Z X,       &ht UNDERSCORE MINUS,  &trans,         \
                                                    &trans,                &trans,                                  &trans,            &kp RIGHT_SHIFT,     &kp RIGHT_ALT,   &trans \
 			)>;
 
@@ -276,9 +276,9 @@
             display-name = "VimNav";
 
             bindings = <LAYER_FROM36( \
-&trans,  &trans,              &kp LG(LEFT_ARROW),  &kp LG(TAB),        &kp RG(RIGHT_ARROW),  &trans,           &kp H,           &kp J,           &kp K,         &kp L,            &kp LCTRL,   &trans,        \
-&trans,  &kp LC(LEFT_ARROW),  &sk LEFT_ALT,        &sk LEFT_SHIFT,     &sk LEFT_GUI,         &kp RC(RIGHT),    &kp LEFT_ARROW,  &kp DOWN_ARROW,  &kp UP_ARROW,  &kp RIGHT_ARROW,  &kp DOLLAR,  &trans,        \
-&trans,  &trans,              &kp LG(LEFT_BRACE),  &kp LG(LS(SPACE)),  &kp RG(RIGHT_BRACE),  &trans,           &trans,          &kp LC(D),       &kp LC(U),     &kp PERCENT,      &trans,      &trans,        \
+  &trans,              &kp LG(LEFT_ARROW),  &kp LG(TAB),        &kp RG(RIGHT_ARROW),  &trans,           &kp H,           &kp J,           &kp K,         &kp L,            &kp LCTRL,        \
+  &kp LC(LEFT_ARROW),  &sk LEFT_ALT,        &sk LEFT_SHIFT,     &sk LEFT_GUI,         &kp RC(RIGHT),    &kp LEFT_ARROW,  &kp DOWN_ARROW,  &kp UP_ARROW,  &kp RIGHT_ARROW,  &kp DOLLAR,       \
+  &trans,              &kp LG(LEFT_BRACE),  &kp LG(LS(SPACE)),  &kp RG(RIGHT_BRACE),  &trans,           &trans,          &kp LC(D),       &kp LC(U),     &kp PERCENT,      &trans,           \
                                                    &trans,             &trans,               &key_repeat,      &trans,          &trans,          &trans \
 			)>;
 
@@ -287,9 +287,9 @@
 
         LEADER {
             bindings = <LAYER_FROM36( \
-&none,  &none,  &none,      &none,  &none,       &none,    &none,      &none,  &none,      &none,      &j_j,       &none,        \
-&none,  &none,  &kp LG(S),  &none,  &none,       &none,    &kp RG(C),  &none,  &kp RG(A),  &none,      &kp RG(V),  &none,        \
-&none,  &j_j,   &kp LG(X),  &none,  &kp DELETE,  &none,    &none,      &none,  &none,      &kp RG(Z),  &none,      &none,        \
+  &none,  &none,      &none,  &none,       &none,    &none,      &none,  &none,      &none,      &j_j,            \
+  &none,  &kp LG(S),  &none,  &none,       &none,    &kp RG(C),  &none,  &kp RG(A),  &none,      &kp RG(V),       \
+  &j_j,   &kp LG(X),  &none,  &kp DELETE,  &none,    &none,      &none,  &none,      &kp RG(Z),  &none,           \
                             &none,  &none,       &none,    &none,      &none,  &none \
 			)>;
 
@@ -298,9 +298,9 @@
 
         Window {
             bindings = <LAYER_FROM36( \
-&none,  &none,  &none,  &none,      &kp RS(RA(RC(RG(SPACE)))), &none,    &w_h,           &w_j,           &w_k,           &w_l,           &none,  &none,        \
-&none,  &none,  &none,  &wez_rand,  &none,                      &none,    &none,          &none,          &none,          &none,          &none,  &none,        \
-&none,  &j_j,   &none,  &none,      &none,                      &none,    &kp RS(RA(H)),  &kp RS(RA(J)),  &kp RS(RA(K)),  &kp RS(RA(L)),  &none,  &none,        \
+  &none,  &none,  &none,      &kp RS(RA(RC(RG(SPACE)))), &none,    &w_h,           &w_j,           &w_k,           &w_l,           &none,         \
+  &none,  &none,  &wez_rand,  &none,                      &none,    &none,          &none,          &none,          &none,          &none,         \
+  &j_j,   &none,  &none,      &none,                      &none,    &kp RS(RA(H)),  &kp RS(RA(J)),  &kp RS(RA(K)),  &kp RS(RA(L)),  &none,         \
                         &none,      &wez_narrow,                &none,    &none,          &none,          &none \
 			)>;
 
@@ -309,9 +309,9 @@
 
         Fn {
             bindings = <LAYER_FROM36( \
-&trans,  &none,    &trans,   &trans,   &trans,   &trans,     &trans,   &trans,   &trans,   &trans,   &kp F19,  &trans,        \
-&trans,  &kp F4,   &kp F3,   &kp F2,   &kp F1,   &kp F5,     &kp F6,   &kp F10,  &kp F7,   &kp F8,   &kp F9,   &trans,        \
-&trans,  &kp F14,  &kp F13,  &kp F12,  &kp F11,  &kp F15,    &kp F16,  &kp F20,  &kp F17,  &kp F18,  &trans,   &trans,        \
+  &none,    &trans,   &trans,   &trans,   &trans,     &trans,   &trans,   &trans,   &trans,   &kp F19,  &trans,        \
+  &kp F4,   &kp F3,   &kp F2,   &kp F1,   &kp F5,     &kp F6,   &kp F10,  &kp F7,   &kp F8,   &kp F9,   &trans,        \
+  &kp F14,  &kp F13,  &kp F12,  &kp F11,  &kp F15,    &kp F16,  &kp F20,  &kp F17,  &kp F18,  &trans,   &trans,        \
                              &trans,   &trans,   &trans,     &trans,   &trans,   &trans \
 			)>;
 
@@ -321,9 +321,9 @@
         SYSTEM {
             display-name = "Leader";
             bindings = <LAYER_FROM36( \
-&trans,  &trans,       &trans,  &trans,  &trans,  &trans,            &bt BT_SEL 0,  &bt BT_SEL 1,  &bt BT_SEL 2,    &bt BT_SEL 3,  &bt BT_SEL 4,  &trans,        \
-&trans,  &trans,       &trans,  &trans,  &trans,  &studio_unlock,    &trans,        &trans,        &trans,          &trans,        &trans,        &trans,        \
-&trans,  &bootloader,  &trans,  &trans,  &trans,  &trans,            &bt BT_CLR,    &trans,        &bt BT_CLR_ALL,  &trans,        &bootloader,   &trans,        \
+  &trans,       &trans,  &trans,  &trans,  &trans,            &bt BT_SEL 0,  &bt BT_SEL 1,  &bt BT_SEL 2,    &bt BT_SEL 3,  &bt BT_SEL 4,       \
+  &trans,       &trans,  &trans,  &trans,  &studio_unlock,    &trans,        &trans,        &trans,          &trans,        &trans,             \
+  &bootloader,  &trans,  &trans,  &trans,  &trans,            &bt BT_CLR,    &trans,        &bt BT_CLR_ALL,  &trans,        &bootloader,        \
                                 &trans,  &trans,  &trans,            &trans,        &trans,        &trans \
 			)>;
 
