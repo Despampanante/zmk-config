@@ -1,0 +1,335 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+#define DEF 0
+#define NAV 1
+#define SYM 2
+#define ADJ 3
+#define EXTRA 4
+
+/ {
+    behaviors {
+        htr: hold_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            require-prior-idle-ms = <1000>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <1 13 25 26 14 2 3 15 27 28 16 4 5 17 29>;
+        };
+
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+        };
+
+        htrs: hold_tap_right_short {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_RIGHT_SHORT";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <135>;
+            global-quick-tap;
+            require-prior-idle-ms = <1000>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <1 13 25 26 14 2 3 15 27 28 16 4 5 17 29>;
+        };
+
+        ht_qu: ht_qu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_QU";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&q_u>, <&kp>;
+
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            require-prior-idle-ms = <0>;
+            hold-trigger-on-release;
+        };
+
+        ht_ck: ht_ck {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_CK";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&c_k>, <&kp>;
+
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            require-prior-idle-ms = <0>;
+            hold-trigger-on-release;
+        };
+
+        ht_npi: holdtap_noprioridle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_NPI";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            require-prior-idle-ms = <0>;
+            hold-trigger-on-release;
+        };
+
+        ht_ing: ht_ing {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_ING";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&i_n_g>, <&kp>;
+
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            require-prior-idle-ms = <0>;
+            hold-trigger-on-release;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        SYS_LAYER {
+            bindings = <&mo 6>;
+            key-positions = <38 37 36>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <500>;
+            layers = <0>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+            require-prior-idle-ms = <1000>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <4 2>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <500>;
+        };
+
+        ret {
+            bindings = <&kp RET>;
+            key-positions = <7 8>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <500>;
+        };
+    };
+
+    //
+
+    macros {
+        colon_eq: coleq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp EQUAL>;
+            label = "COLEQ";
+            wait-ms = <5>;
+        };
+
+        q_u: q_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "Q_U";
+            wait-ms = <5>;
+        };
+
+        wez_narrow: wez_narrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RC(RG(RS(SPACE)))) &kp N9>;
+            label = "WEZ_NARROW";
+            wait-ms = <5>;
+        };
+
+        wez_rand: wez_rand {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RC(RG(RS(SPACE)))) &kp R>;
+            label = "WEZ_RAND";
+            wait-ms = <5>;
+        };
+
+        c_k: c_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp K>;
+            label = "C_K";
+        };
+
+        j_j: j_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp J>;
+            label = "J_J";
+        };
+
+        i_n_g: i_n_g {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G>;
+            label = "I_N_G";
+        };
+
+        w_h: w_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp W &kp H>;
+            label = "W_H";
+            wait-ms = <15>;
+            tap-ms = <15>;
+        };
+
+        w_j: w_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp W &kp J>;
+            label = "W_J";
+            wait-ms = <15>;
+            tap-ms = <15>;
+        };
+
+        w_k: w_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp W &kp K>;
+            label = "W_K";
+            wait-ms = <15>;
+            tap-ms = <15>;
+        };
+
+        w_l: w_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp W &kp L>;
+            label = "W_L";
+            wait-ms = <15>;
+            tap-ms = <15>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        ALPHA {
+            display-name = "Alphabet";
+
+            bindings = <LAYER_FROM36( \
+  &none,  &sl 5,        &sl 3,        &sl 4,        &kp ESCAPE,                   &kp BSPC,         &ht_npi BACKSLASH SLASH,  &ht LEFT_BRACKET COMMA,  &ht RIGHT_BRACKET DOT,  &htr RCTRL G,       \
+  &kp M,  &ht_npi J S,  &ht_npi V R,  &ht_npi B T,  &ht_npi TAB Q,                &kp Y,            &htr RGUI E,              &htrs RIGHT_SHIFT A,     &htr RALT H,            &kp P,              \
+  &kp F,  &ht_ck 0 C,   &ht_npi W L,  &ht_npi K D,   &none,                       &none,            &ht_ing 0 I,              &kp O,                   &ht_qu 0 U,             &none,              \
+                               &none,              &ht_npi DOUBLE_QUOTES SQT, &lt 1 N,    &lt 2 SPACE,  &sk RIGHT_SHIFT,             &none \
+			)>;
+
+            label = "Alphabet";
+        };
+
+        SYMNUM {
+            display-name = "SymNum";
+
+            bindings = <LAYER_FROM36( \
+&trans,               &trans,             &trans,                &trans,                                  &trans,            &none,               &trans,          &trans,            &trans,                &trans,         \
+&ht DOLLAR NUMBER_4,  &ht HASH NUMBER_3,  &ht AT_SIGN NUMBER_2,  &ht EXCLAMATION NUMBER_1,                &ht PERCENT N5,    &ht CARET NUMBER_6,  &kp N0,          &ht AMPERSAND N7,  &ht ASTERISK N8,       &kp N9,         \
+&trans,               &ht TILDE GRAVE,    &ht COLON SEMICOLON,   &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS,  &trans,            &sk RGUI,            &ht PLUS EQUAL,  &ht_npi Z X,       &ht UNDERSCORE MINUS,  &trans,         \
+                                                   &trans,                &trans,                                  &trans,            &kp RIGHT_SHIFT,     &kp RIGHT_ALT,   &trans \
+			)>;
+
+            label = "SymNum";
+        };
+
+        VIMNAV {
+            display-name = "VimNav";
+
+            bindings = <LAYER_FROM36( \
+  &trans,              &kp LG(LEFT_ARROW),  &kp LG(TAB),        &kp RG(RIGHT_ARROW),  &trans,           &kp H,           &kp J,           &kp K,         &kp L,            &kp LCTRL,        \
+  &kp LC(LEFT_ARROW),  &sk LEFT_ALT,        &sk LEFT_SHIFT,     &sk LEFT_GUI,         &kp RC(RIGHT),    &kp LEFT_ARROW,  &kp DOWN_ARROW,  &kp UP_ARROW,  &kp RIGHT_ARROW,  &kp DOLLAR,       \
+  &trans,              &kp LG(LEFT_BRACE),  &kp LG(LS(SPACE)),  &kp RG(RIGHT_BRACE),  &trans,           &trans,          &kp LC(D),       &kp LC(U),     &kp PERCENT,      &trans,           \
+                                                   &trans,             &trans,               &key_repeat,      &trans,          &trans,          &trans \
+			)>;
+
+            label = "VimNav";
+        };
+
+        LEADER {
+            bindings = <LAYER_FROM36( \
+  &none,  &none,      &none,  &none,       &none,    &none,      &none,  &none,      &none,      &j_j,            \
+  &none,  &kp LG(S),  &none,  &none,       &none,    &kp RG(C),  &none,  &kp RG(A),  &none,      &kp RG(V),       \
+  &j_j,   &kp LG(X),  &none,  &kp DELETE,  &none,    &none,      &none,  &none,      &kp RG(Z),  &none,           \
+                            &none,  &none,       &none,    &none,      &none,  &none \
+			)>;
+
+            label = "LEAD";
+        };
+
+        Window {
+            bindings = <LAYER_FROM36( \
+  &none,  &none,  &none,      &kp RS(RA(RC(RG(SPACE)))), &none,    &w_h,           &w_j,           &w_k,           &w_l,           &none,         \
+  &none,  &none,  &wez_rand,  &none,                      &none,    &none,          &none,          &none,          &none,          &none,         \
+  &j_j,   &none,  &none,      &none,                      &none,    &kp RS(RA(H)),  &kp RS(RA(J)),  &kp RS(RA(K)),  &kp RS(RA(L)),  &none,         \
+                        &none,      &wez_narrow,                &none,    &none,          &none,          &none \
+			)>;
+
+            label = "WIN";
+        };
+
+        Fn {
+            bindings = <LAYER_FROM36( \
+  &none,    &trans,   &trans,   &trans,   &trans,     &trans,   &trans,   &trans,   &trans,   &kp F19,       \
+  &kp F4,   &kp F3,   &kp F2,   &kp F1,   &kp F5,     &kp F6,   &kp F10,  &kp F7,   &kp F8,   &kp F9,        \
+  &kp F14,  &kp F13,  &kp F12,  &kp F11,  &kp F15,    &kp F16,  &kp F20,  &kp F17,  &kp F18,  &trans,        \
+                             &trans,   &trans,   &trans,     &trans,   &trans,   &trans \
+			)>;
+
+            label = "fn";
+        };
+
+        SYSTEM {
+            display-name = "Leader";
+            bindings = <LAYER_FROM36( \
+  &trans,       &trans,  &trans,  &trans,  &trans,            &bt BT_SEL 0,  &bt BT_SEL 1,  &bt BT_SEL 2,    &bt BT_SEL 3,  &bt BT_SEL 4,       \
+  &trans,       &trans,  &trans,  &trans,  &studio_unlock,    &trans,        &trans,        &trans,          &trans,        &trans,             \
+  &bootloader,  &trans,  &trans,  &trans,  &trans,            &bt BT_CLR,    &trans,        &bt BT_CLR_ALL,  &trans,        &bootloader,        \
+                                &trans,  &trans,  &trans,            &trans,        &trans,        &trans \
+			)>;
+
+            label = "System";
+        };
+    };
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
+};
