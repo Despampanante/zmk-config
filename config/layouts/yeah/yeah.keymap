@@ -250,9 +250,9 @@
             display-name = "Alphabet";
 
             bindings = <LAYER_FROM36( \
-  &none,  &sl 5,        &sl 3,        &sl 4,        &kp ESCAPE,                   &kp BSPC,         &ht_npi BACKSLASH SLASH,  &ht LEFT_BRACKET COMMA,  &ht RIGHT_BRACKET DOT,  &htr RCTRL G,       \
+  &none,  &sl 5,        &sl 3,        &sl 4,        &kp ESCAPE,                   &kp BSPC,         &ht_npi BACKSLASH SLASH,  &ht LEFT_BRACKET COMMA,  &ht RIGHT_BRACKET DOT,   &none,       \
   &kp M,  &ht_npi J S,  &ht_npi V R,  &ht_npi B T,  &ht_npi TAB Q,                &kp Y,            &htr RGUI E,              &htrs RIGHT_SHIFT A,     &htr RALT H,            &kp P,              \
-  &kp F,  &ht_ck 0 C,   &ht_npi W L,  &ht_npi K D,   &none,                       &none,            &ht_ing 0 I,              &kp O,                   &ht_qu 0 U,             &none,              \
+  &kp F,  &ht_ck 0 C,   &ht_npi W L,  &ht_npi K D,   &none,                       &none,            &ht_ing 0 I,              &kp O,                   &ht_qu 0 U,             &htr RCTRL G,             \
                                &none,              &ht_npi DOUBLE_QUOTES SQT, &lt 1 N,    &lt 2 SPACE,  &sk RIGHT_SHIFT,             &none \
 			)>;
 
