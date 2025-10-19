@@ -1,0 +1,49 @@
+// chog (lenchog) (2 likes)
+//   q b g . z  v w o y f
+//   r n s t m  k * a i h
+//   l p d c j  x u ; , '
+//                e   
+
+// "rules": {
+//   "r": "l",
+//   "t": ".",
+//   "c": "t",
+//   "y": ",",
+//   "d": "s",
+//   "g": "s",
+//   "o": "u",
+//   "default": {
+//     "type": "repeat"
+//   }
+
+ / {
+    behaviors {
+        ak_magic: ak_magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            akt_R_L { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            akt_T_DOT { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp DOT>; };
+            akt_C_T { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
+            akt_Y_COMMA { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+            akt_D_S { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_G_S { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_O_U { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
+
+        };
+    };
+ };
+
+ZMK_BASE_LAYER(Base,
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &kp Q         &kp B         &kp G         &kp DOT       &kp Z       ,   &kp V         &kp W         &kp O         &kp Y         &kp F       ,
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp R         &kp N         &kp S         &kp T         &kp M       ,   &kp K         &ak_magic     &kp A         &kp I         &kp H       ,
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp L         &kp P         &kp D         &kp C         &kp J       ,   &kp X         &kp U         &kp SEMI      &kp COMMA     &kp SQT     ,
+//╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+                                              &kp BCSP      &kp E       ,   &kp SPACE     &kp TAB
+//                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
+)
+

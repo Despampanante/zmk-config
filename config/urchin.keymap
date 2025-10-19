@@ -2,6 +2,7 @@
 // #include "includes/yeah_base.keymap"
 // #include "layouts/buggy/buggy_base.keymap"
 // #include "layouts/night/night_flipped.keymap"
-#include "layouts/yeah/yeah.keymap"
+// #include "layouts/yeah/yeah.keymap"
+#include "layouts/chog/chog.keymap"
 // #include "includes/base.keymap"
 // #include "includes/just_alphas.keymap"
