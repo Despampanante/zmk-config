@@ -36,37 +36,37 @@
 #pragma once
 
 #define LTC  4  // left-top row
-#define LTP  3
+#define LTI  3
 #define LTM  2
 #define LTR  1
 #define LTP  0
 
 #define RTC  5  // right-top row
-#define RTP  6
+#define RTI  6
 #define RTM  7
 #define RTR  8
 #define RTP  9
 
 #define LMC 14  // left-middle row
-#define LMP 13
+#define LMI 13
 #define LMM 12
 #define LMR 11
 #define LMP 10
 
 #define RMC 15  // right-middle row
-#define RMP 16
+#define RMI 16
 #define RMM 17
 #define RMR 18
 #define RMP 19
 
 #define LBC 24  // left-bottom row
-#define LBP 23
+#define LBI 23
 #define LBM 22
 #define LBR 21
 #define LBP 20
 
 #define RBC 25  // right-bottom row
-#define RBP 26
+#define RBI 26
 #define RBM 27
 #define RBR 28
 #define RBP 29
@@ -77,8 +77,8 @@
 #define RHI 32  // right thumb keys
 #define RHO 33
 
-#define KEYS_L LTP LTR LTM LTP LTC LMP LMR LMM LMP LMC LBP LBR LBM LBP LBC  // left-hand keys
-#define KEYS_R RTC RTP RTM RTR RTP RMC RMP RMM RMR RMP RBC RBP RBM RBR RBP  // right-hand keys
+#define KEYS_L LTP LTR LTM LTI LTC LMP LMR LMM LMI LMC LBP LBR LBM LBI LBC  // left-hand keys
+#define KEYS_R RTC RTI RTM RTR RTP RMC RMI RMM RMR RMP RBC RBI RBM RBR RBP  // right-hand keys
 #define THUMBS     LHI LHO RHI RHO                                          // thumb keys
 
 #define LAYER_FROM36( \
