@@ -82,5 +82,3 @@ ZMK_BASE_LAYER(Base,
                                               &kp BSPC      &kp E       ,   &kp SPACE     &kp TAB
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
-
-a
