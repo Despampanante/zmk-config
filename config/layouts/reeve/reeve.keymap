@@ -70,8 +70,13 @@
  
 #define XXX &none
 #define ___ &trans
+ZMK_COMBO(v,   &kp V,           LTR LTM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(q,   &kp Q,           LBM LBI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(z,   &kp Z,           LBR LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(qu,  &kp Q &kp U,     LTM LTI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-ZMK_BASE_LAYER(Base,
+
+ZMK_BASE_LAYER(DEF,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           &kp W         &kp F         &kp P       &kp B       ,   &kp X         &kp L         &kp U         &kp Y         &kp SQT       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
