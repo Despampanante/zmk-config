@@ -67,13 +67,17 @@
     };
  };
 
- 
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
 #define XXX &none
 #define ___ &trans
-ZMK_COMBO(v,   &kp V,           LTR LTM,     0, 30, 30)
-ZMK_COMBO(q,   &kp Q,           LBM LBI,     0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(z,   &kp Z,           LBR LBM,     0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(qu,  &kp Q &kp U,     LTM LTI,     0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(v,   &kp V,           LTR LTM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(q,   &kp Q,           LBM LBI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(z,   &kp Z,           LBR LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(qu,  &kp Q &kp U,     LTM LTI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 
 ZMK_BASE_LAYER(DEF,
