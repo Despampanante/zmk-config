@@ -201,6 +201,20 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
 
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+#define XXX &none
+#define ___ &trans
+ZMK_COMBO(P,   &kp P,           LMM LMI,     Alpha, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(V,   &kp V,           LMP LMI,     Alpha, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// combo rules:
+// C + N = P sfb: 0.009% sfs: 0.448%
+// S + C = V sfb: 0.010% sfs: 0.324%
+
 // s t n c      r a i e
 // ~ d h ~      ~ o u ~
 //       y      l
