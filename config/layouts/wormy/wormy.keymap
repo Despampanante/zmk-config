@@ -10,7 +10,6 @@
 //   #define _BT_SEL_KEYS_ &trans &trans &trans &trans &trans
 // #endif
 
-#include "zmk-helpers/helper.h"
 // #include "zmk-helpers/unicode-chars/greek.dtsi"
 // #include "zmk-helpers/unicode-chars/german.dtsi"
 
@@ -33,6 +32,8 @@
   #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                 \
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
+#include "zmk-helpers/helper.h"
+
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
@@ -44,7 +45,7 @@
 
 
 
-ZMK_COMBO(P,   &kp P, LMM LMI, Alpha1 Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(P,   &kp P, 0 1, 0, 0, 0)
 ZMK_COMBO(V,   &kp V, LMP LMI, Alpha1 Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // combo rules:
