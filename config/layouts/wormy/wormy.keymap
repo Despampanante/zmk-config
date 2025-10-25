@@ -30,6 +30,42 @@
 #endif
 
 #include "zmk-helpers/helper.h"
+// chog (lenchog) (2 likes)
+//   q b g . z  v w o y f
+//   r n s t m  k * a i h
+//   l p d c j  x u ; , '
+//                e   
+
+// "rules": {
+//   "r": "l",
+//   "t": ".",
+//   "c": "t",
+//   "y": ",",
+//   "d": "s",
+//   "g": "s",
+//   "o": "u",
+//   "default": {
+//     "type": "repeat"
+//   }
+
+ / {
+    behaviors {
+        ak_magic: ak_magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            akt_R_L { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            akt_T_DOT { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp DOT>; };
+            akt_C_T { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
+            akt_Y_COMMA { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+            akt_D_S { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_G_S { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_O_U { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
+
+        };
+    };
+ };
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
@@ -43,8 +79,8 @@ ZMK_COMBO(q,   &kp Q,           LBM LBI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FA
 ZMK_COMBO(z,   &kp Z,           LBR LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(qu,  &kp Q &kp U,     LTM LTI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-ZMK_COMBO(P,   &kp P, 0 1, 0, 0, 0)
-ZMK_COMBO(V,   &kp V, LMP LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// ZMK_COMBO(P,   &kp P, 0 1, 0, 0, 0)
+// ZMK_COMBO(V,   &kp V, LMP LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // combo rules:
 // C + N = P sfb: 0.009% sfs: 0.448%
@@ -57,7 +93,7 @@ ZMK_COMBO(V,   &kp V, LMP LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // f k b g      q ' , ;
 // ~ m x ~      ~ ~ . ~
 //       w      j 
-ZMK_BASE_LAYER(Alpha,
+ZMK_BASE_LAYER(DEF,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           ___           ___           ___           ___         ,   ___           &kp BSPC      &kp TAB       ___           ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -72,7 +108,7 @@ ZMK_BASE_LAYER(Alpha,
 // f k b g      q ' , ;
 // ~ m x ~      ~ ~ . ~
 //       w      j   
-ZMK_BASE_LAYER(Alpha2,
+ZMK_BASE_LAYER(NAV,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           ___           ___           ___           ___         ,   ___           ___           ___           ___           ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
