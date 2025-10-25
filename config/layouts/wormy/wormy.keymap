@@ -42,8 +42,10 @@
 #define XXX &none
 #define ___ &trans
 
-ZMK_COMBO(P,   &kp P,           LMM LMI, 0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(V,   &kp V,           LMP LMI, 0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+
+ZMK_COMBO(P,   &kp P, LMM LMI, Alpha1 Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(V,   &kp V, LMP LMI, Alpha1 Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // combo rules:
 // C + N = P sfb: 0.009% sfs: 0.448%
@@ -64,7 +66,7 @@ ZMK_BASE_LAYER(Alpha,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___           &kp D         &kp H         ___           ___         ,   ___           ___           &kp O         &kp U         ___         ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &kp y           &sl 1         ,&kp SPACE    &kp L
+                                              &kp y           &sl 1      ,  &kp SPACE    &kp L
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
