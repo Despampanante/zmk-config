@@ -42,8 +42,8 @@
 #define XXX &none
 #define ___ &trans
 
-ZMK_COMBO(P,   &kp P,           LMM LMI, Alpha, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(V,   &kp V,           LMP LMI, Alpha, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(P,   &kp P,           LMM LMI, 0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(V,   &kp V,           LMP LMI, 0, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // combo rules:
 // C + N = P sfb: 0.009% sfs: 0.448%
