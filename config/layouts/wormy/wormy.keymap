@@ -44,7 +44,7 @@ ZMK_COMBO(z,   &kp Z,           LBR LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FA
 ZMK_COMBO(qu,  &kp Q &kp U,     LTM LTI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 ZMK_COMBO(P,   &kp P, 0 1, 0, 0, 0)
-ZMK_COMBO(V,   &kp V, LMP LMI, Alpha1 Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(V,   &kp V, LMP LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // combo rules:
 // C + N = P sfb: 0.009% sfs: 0.448%
