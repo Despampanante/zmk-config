@@ -48,25 +48,6 @@
 //     "type": "repeat"
 //   }
 
- / {
-    behaviors {
-        ak_magic: ak_magic {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&key_repeat>;
-
-            akt_R_L { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
-            akt_T_DOT { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp DOT>; };
-            akt_C_T { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
-            akt_Y_COMMA { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
-            akt_D_S { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
-            akt_G_S { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
-            akt_O_U { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
-
-        };
-    };
- };
-
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
