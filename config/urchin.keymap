@@ -7,6 +7,7 @@
 // #include "layouts/reeve/reeve.keymap"
 // #include "layouts/wormy/wormy.keymap"
 // #include "layouts/magicStronk/magicStronk.keymap"
-#include "layouts/night4col/night4col.keymap"
+// #include "layouts/night4col/night4col.keymap"
+#include "layouts/teenspirit/teenspirit.keymap"
 // #include "includes/base.keymap"
 // #include "includes/just_alphas.keymap"
