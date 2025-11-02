@@ -61,7 +61,7 @@ ZMK_COMBO(m,      &kp M,           LMR LMM,     DEF, COMBO_TERM_FAST, COMBO_IDLE
 ZMK_COMBO(w,      &kp W,           LMP LMR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(f,      &kp F,           LBR LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(p,      &kp P,           LBM LBI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(k,      &kp K,           LTM LBI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(k,      &kp K,           LMM LBI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(b,      &kp B,           LMI LMM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 
