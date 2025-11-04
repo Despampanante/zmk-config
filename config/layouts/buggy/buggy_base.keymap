@@ -56,6 +56,8 @@
 
             magic_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
             magic_rl { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+			magic_sc { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
+
         };
 
         magicR: magicR {
@@ -66,7 +68,6 @@
             magic_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
             magic_rl { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
             magic_sy { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp Y>; };
-            magic_sc { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
         };
     };
 };
