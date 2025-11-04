@@ -17,6 +17,7 @@
 #define Function 3
 #define Media 4
 #define Navigation 5
+#define System 6
 
 
 #define XXX &none
