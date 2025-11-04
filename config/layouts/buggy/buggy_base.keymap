@@ -12,7 +12,7 @@
 
 #define Alpha1 0
 #define Alpha2 1
-#define Alphas Alpha Alpha2
+#define Alphas Alpha1 Alpha2
 
 
 #define Navigation 2
@@ -91,7 +91,7 @@ ZMK_COMBO(lParen,     &kp LPAR,           LMI LBI,     Alphas, COMBO_TERM_FAST, 
 ZMK_COMBO(lAligator,  &kp LT  ,           LMM LBM,     Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 ZMK_COMBO(rBracket,   &kp RBKT,           RMR RBR,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rBrace,     &kp RBRC,           RMM RBM,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rBrace,     &kp RBRC,           RMM RBM,     Alpha1, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rParen,     &kp RPAR,           RMI RBI,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rAligator,  &kp RT  ,           RMM RBM,     Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
