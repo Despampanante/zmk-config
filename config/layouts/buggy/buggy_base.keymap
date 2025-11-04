@@ -93,7 +93,7 @@ ZMK_COMBO(lAligator,  &kp LT  ,           LMM LBM,     Alpha2, COMBO_TERM_FAST, 
 ZMK_COMBO(rBracket,   &kp RBKT,           RMR RBR,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rBrace,     &kp RBRC,           RMM RBM,     Alpha1, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rParen,     &kp RPAR,           RMI RBI,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rAligator,  &kp RT  ,           RMM RBM,     Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rAligator,  &kp GT  ,           RMM RBM,     Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
  
 #define MAGIC_SHIFT &magic_shift LSHFT 0
