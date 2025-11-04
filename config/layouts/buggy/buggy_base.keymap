@@ -49,15 +49,32 @@
 
  / {
     behaviors {
-        magic: magic {
+        magicL: magicL {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
 
 			magic_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
+			magic_rl { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>;
+
+        };
+
+		magicR: magicR {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+			magic_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
+			magic_rl { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+			magic_sy { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp Y>; };
+
+			magic_sc { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp C>;
         };
     };
  };
+ }
+
+ 
 
 #ifndef ZMK_BASE_LAYER
   #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                 \
@@ -72,9 +89,9 @@ ZMK_BASE_LAYER(Alpha,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           ___           ___           ___           ___         ,   ___           &kp BSPC      &kp TAB           ___           ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp N         &kp R         &kp T         &kp S         &magic      ,   &magic        &kp H         &kp A         &kp I         &kp E       ,
+    &kp N         &kp R         &kp T         &kp S         &magicL      ,   &magicR        &kp H         &kp A         &kp I         &kp E       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &sk LSHIFT    &kp L         &kp D         &kp Y         ___         ,   ___           &kp M         &kp O         &kp U         &sk RSHIFT         ,
+    &magicL       &kp L         &kp D         &kp Y         ___         ,    ___            &kp M         &kp O         &kp U         &magicR         ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                ___           &sl 1         ,&kp SPACE     ___
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
