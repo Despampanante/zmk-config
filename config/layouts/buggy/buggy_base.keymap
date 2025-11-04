@@ -12,12 +12,14 @@
 
 #define Alpha1 0
 #define Alpha2 1
-#define Alphas Alpha1 Alpha2
-#define Numbers 2
-#define Function 3
-#define Media 4
-#define Navigation 5
+#define Navigation 2
+#define Numbers 3
+#define Function 4
+#define Media 5
 #define System 6
+
+#define Alphas Alpha1 Alpha2
+
 
 
 #define XXX &none
@@ -118,8 +120,8 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word Numbers>, <&sl Numbers>;
               tapping-term-ms = <200>;)
 
-//   n r t s    h a i e    
-//     l d y    m o u      
+//   n r t s    h a i e    aaaa
+//     l d y    m o u      p 
 //   p w b c    f z . j
 //     x v g    k q , 
 ZMK_BASE_LAYER(Alpha1,
