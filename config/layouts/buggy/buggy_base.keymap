@@ -68,6 +68,14 @@
             magic_rl { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
             magic_sy { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp Y>; };
         };
+
+		mo_sl: behavior_mo_sl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sl>;
+        };
     };
 };
 
@@ -166,7 +174,7 @@ ZMK_BASE_LAYER(Alpha1,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &magicL       &kp L         &kp D         &kp Y         ___         ,    ___           &kp M         &kp O         &kp U         &magicR         ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                               SMART_NUM    Navigation_alphas2 Navigation Alpha2 ,lt_spc Symbols 0     MAGIC_SHIFT
+                                               SMART_NUM    &mo_sl Navigation Alpha2 ,lt_spc Symbols 0     MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
