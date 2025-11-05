@@ -140,8 +140,8 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word Numbers>, <&sl Numbers>;
               tapping-term-ms = <200>;)
-ZMK_HOLD_TAP(Navigation_alphas2, bindings = <&mo Navigation>, <&sl Alpha2>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+// ZMK_HOLD_TAP(Navigation_alphas2, bindings = <&mo Navigation>, <&sl Alpha2>; flavor = "balanced";
+//              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
 // Tap: space | Shift + tap: dot -> space -> sticky shift | Hold: nav layer.
 ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
