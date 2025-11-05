@@ -140,16 +140,18 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word Numbers>, <&sl Numbers>;
               tapping-term-ms = <200>;)
-ZMK_HOLD_TAP(Navigation_alphas2, bindings = <&mo Navigation>, <&sl Alpha2>; flavor = "balanced";
+
+
+ZMK_HOLD_TAP(Navigation_alphas2, bindings = <&mo>, <&sl>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
 
-// // Tap: space | Shift + tap: dot -> space -> sticky shift | Hold: nav layer.
-// ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
-//              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-// SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
-// ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
-//           tap-ms = <5>;)
+// Tap: space | Shift + tap: dot -> space -> sticky shift | Hold: nav layer.
+ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
+ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
+          tap-ms = <5>;)
 
 
 //   n r t s    h a i e    
@@ -164,7 +166,7 @@ ZMK_BASE_LAYER(Alpha1,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &magicL       &kp L         &kp D         &kp Y         ___         ,    ___           &kp M         &kp O         &kp U         &magicR         ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                               SMART_NUM    ___ ,___     MAGIC_SHIFT
+                                               SMART_NUM    Navigation_alphas2 Navigation Alpha2 ,lt_spc Symbols 0     MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
