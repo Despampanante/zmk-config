@@ -97,13 +97,13 @@ ZMK_COMBO(lBracket,   &kp LBKT,           LMR LBR,     Alphas, COMBO_TERM_FAST, 
 ZMK_COMBO(lBrace,     &kp LBRC,           LMM LBM,     Alpha1, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(lParen,     &kp LPAR,           LMI LBI,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(lAligator,  &kp LT  ,           LMM LBM,     Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(tab, 		 &kp TAB,           LMR LMM,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lTab, 		 &kp TAB,           LMR LMM,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 ZMK_COMBO(rBracket,   &kp RBKT,           RMR RBR,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rBrace,     &kp RBRC,           RMM RBM,     Alpha1, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rParen,     &kp RPAR,           RMI RBI,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rAligator,  &kp GT  ,           RMM RBM,     Alpha2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(tab, 		 &kp TAB,           RMR RMM,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rEntertab,  &kp ENTER,           RMR RMM,     Alphas, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 
  
@@ -186,33 +186,6 @@ ZMK_BASE_LAYER(Alpha2,
                                               ___           ___         ,   ___           ___
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
-
-// ZMK_BASE_LAYER(Alpha1,
-// //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//     &magicL       &kp L         &kp D         &kp Y         ___         ,    ___           &kp M         &kp O         &kp U         &magicR         ,
-// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//     &kp N         &kp R         &kp T         &kp S         ___      ,      ___            &kp H         &kp A         &kp I         &kp E       ,
-// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//     &magicL       &kp L         &kp D         &kp Y         ___         ,    ___           &kp M         &kp O         &kp U         &magicR         ,
-// //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-//                                                SMART_NUM    Symbol_alphas2         ,&kp SPACE     MAGIC_SHIFT
-// //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
-// )
-
-// //  p w b c   f z . j
-// //    x v g   k q ,  
-// ZMK_BASE_LAYER(Alpha2,
-// //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//     ___           &kp X         &kp V         &kp G         ___         ,   ___           &kp K         &comma_morph  &kp Q              ___         ,
-// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//     &kp P         &kp W         &kp B         &kp C         ___         ,   ___           &kp F         &dot_morph    &kp Z                &kp J       ,
-// //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//     ___           &kp X         &kp V         &kp G         ___         ,   ___           &kp K         &comma_morph  &kp Q              ___         ,
-// //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-//                                               ___           ___         ,   ___           ___
-// //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
-// )
-
 
 ZMK_BASE_LAYER(Navigation,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
