@@ -28,16 +28,6 @@
 #endif
 
 #include "zmk-helpers/helper.h"
-
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NAV NUM>;
-            then-layer = <SYS>;
-        };
-    };
-}
 //   q b g . z  v w o y f
 //   r n s t m  k * a i h
 //   l p d c j  x u ; , '
@@ -67,8 +57,8 @@
 // ZMK_COMBO(z,   &kp Z,           LBR LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // ZMK_COMBO(qu,  &kp Q &kp U,     LTM LTI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-ZMK_COMBO(p,   &kp P, LMM LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(v,   &kp V, LMP LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// ZMK_COMBO(p,   &kp P, LMM LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// ZMK_COMBO(v,   &kp V, LMP LMI, DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
  / {
     behaviors {
