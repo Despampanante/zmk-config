@@ -66,11 +66,11 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
-            w_h { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H>; }
-			y_comma { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; }
-			u_e { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }
-			g_s { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }
-			apos_r { trigger-keys = <APOSTROPHE>; max-prior-idle-ms = <300>; bindings = <&kp R>; }
+            w_h { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+			y_comma { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp COMMA>; };
+			u_e { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+			g_s { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+			apos_r { trigger-keys = <APOSTROPHE>; max-prior-idle-ms = <300>; bindings = <&kp R>; };
         };
     };
  };
