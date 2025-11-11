@@ -218,10 +218,10 @@ ZMK_BASE_LAYER(Base,
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
-//   q b g . z  v w o y f
-//   r n s t m  k * a i h
-//   l p d c j  x u ; , '
-//                e    
+//   f d l b v    z g o u j
+//   s t r h k    y m a e i
+//   q x p * ,    w c ' ; .
+//           in
 // Chog
 // magic rl, y,, ds, gs, ct, ou, *w, t.
 #define DEAD1 F21

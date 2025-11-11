@@ -60,6 +60,7 @@
 
             magic_rl { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
 			magic_sc { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
+			magic_ho { trigger-keys = <H>; max-prior-idle-ms = <300>; bindings = <&kp O>; };
 			// magic_my { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp Y>;
 			// magic_ay { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp Y>;
 		};
