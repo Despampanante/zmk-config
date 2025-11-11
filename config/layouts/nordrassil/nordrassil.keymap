@@ -216,7 +216,11 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
         };
     };
  };
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
 
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
 ZMK_COMBO(lTab, 		 &kp TAB,           LMR LMM,     DEFs, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rBSPC, 		 &kp BSPC,           RMI RMM,     DEFs, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
