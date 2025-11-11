@@ -72,8 +72,8 @@
 
 /* Combos, leader key sequences, mouse emulation */
 
-#include "../../includes/combos.dtsi" // Must be sourced after HRM-combo hack.
-#include "../../includes/mouse.dtsi"
+// #include "../../includes/combos.dtsi" // Must be sourced after HRM-combo hack.
+// #include "../../includes/mouse.dtsi"
 
 /* Nav cluster */
 
