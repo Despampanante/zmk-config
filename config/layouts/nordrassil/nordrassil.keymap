@@ -221,9 +221,9 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
             bindings = <&key_repeat>;
             
             // Left-hand magic expansions (no repeats - removed rules that output same letter)
-			r_r_l { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>;
-			r_w_n { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp N>;
-			r_e_o { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp O>;
+			r_r_l { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+			r_w_n { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp N>;};
+			r_e_o { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp O>;};
         };
 
     };
