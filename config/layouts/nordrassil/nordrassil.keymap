@@ -214,6 +214,18 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 			//"*N**or**dr**as**s**i**l**"
 			r_astr_nordrassil { trigger-keys = <ASTERISK>; max-prior-idle-ms = <300>; bindings = <&kp N &kp O &kp R &kp D &kp R &kp A &kp S &kp S &kp I &kp L>; };
         };
+
+		magicR2: magicR2 {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+            
+            // Left-hand magic expansions (no repeats - removed rules that output same letter)
+			r_r_l { trigger-keys = <R>; max-prior-idle-ms = <300>; bindings = <&kp L>;
+			r_w_n { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp N>;
+			r_e_o { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp O>;
+        };
+
     };
  };
 #define COMBO_TERM_FAST 18
@@ -269,7 +281,7 @@ ZMK_BASE_LAYER(DEF,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
   &kp N	        &kp S         &kp R         &kp T         ___         ,   ___           &kp A         &kp E         &kp I         &kp H       ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-  ___           &kp G         &kp M        &kp M           ___            ,   ___       &magicR           &kp COMMA     &kp M       ___       ,
+  ___           &kp G         &kp M        &kp M           ___            ,   ___       &magicR2           &kp COMMA     &kp M       ___       ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                &kp T     &sl DEF2       ,   &kp SPACE    &sl DEF2
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
