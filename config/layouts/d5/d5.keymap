@@ -35,8 +35,21 @@
 #define XXX &none
 #define ___ &trans
 
+/ {
+  macros {
+    // Two parameters: layer and keycode
+    db: my_layer_toggle_macro {
+      compatible = "zmk,behavior-macro-two-param";
+      #binding-cells = <2>;
+      bindings = <
+        &kp &macro_param_1to1 // Use first parameter (layer) for momentary activation
+        &kp &macro_param_2to1 // Use second parameter (keycode) for tap
+      >;
+    };
+  };
+};
 
-ZMK_COMBO(eg,  <&kp E &kp G>,     LTR LMR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(eg,  &db E G,     LTR LMR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(ew,  &kp E &kp W,     LMR LBR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(ct,  &kp C &kp T,     LTM LMM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(tc,  &kp T &kp C,     LMM LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
