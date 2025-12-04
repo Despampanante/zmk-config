@@ -44,6 +44,7 @@
 	  wait-ms = <30>;
       tap-ms = <40>;
       bindings = <
+	  	&kp L
         &kp &macro_param_1to1 // Use first parameter (layer) for momentary activation
         &kp &macro_param_2to1 // Use second parameter (keycode) for tap
       >;
