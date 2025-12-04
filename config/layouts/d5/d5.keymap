@@ -36,7 +36,7 @@
 #define ___ &trans
 
 
-ZMK_COMBO(eg,  &kp E &kp G,     LTR LMR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(eg,  <&kp E &kp G>,     LTR LMR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(ew,  &kp E &kp W,     LMR LBR,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(ct,  &kp C &kp T,     LTM LMM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(tc,  &kp T &kp C,     LMM LBM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
