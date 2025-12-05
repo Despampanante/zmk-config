@@ -76,6 +76,27 @@ ZMK_COMBO(a,   &kp A   ,    LMM LMI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(u,   &kp U   ,    RMR RMM,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(i,   &kp I   ,    RMM RMI,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
+ / {
+    behaviors {
+        r_rep_space: r_rep_space {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>;
+
+            thing { trigger-keys = <B F J Z L N H P S>; max-prior-idle-ms = <300>; bindings = <&key_repeat>; };
+            
+
+        };
+		l_rep_space: l_rep_space {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>;
+
+            thing { trigger-keys = <G D M T R V W C K>; max-prior-idle-ms = <300>; bindings = <&key_repeat>; }; 
+
+        };
+    };
+ };
 
 ZMK_BASE_LAYER(DEF,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
