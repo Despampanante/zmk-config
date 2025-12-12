@@ -41,7 +41,7 @@ ZMK_ADAPTIVE_KEY(
 #define DEF2_NUM_NAV &smart_num NAV 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+ZMK_TAP_DANCE(num_dance, bindings = <&num_word DEF2_NUM>, <&sl DEF2_NUM>;
               tapping-term-ms = <200>;)
 
 // Smart-mouse, requires tri-state module.
