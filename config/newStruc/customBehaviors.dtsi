@@ -134,7 +134,7 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 /*------------------------------------------------------------------------- Keymap */
 
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
+ZMK_CONDITIONAL_LAYER(sys, FN DEF2_NUM, SYS) // FN + NUM --> SYS.
 
 #ifndef ZMK_BASE_LAYER
   #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                 \
