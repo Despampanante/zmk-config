@@ -78,11 +78,11 @@
 #define RHO 33
 
 // Numeric position aliases (0-33)
-#define LT0  0   // left-top row
-#define LT1  1
+#define LT0  4   // left-top row
+#define LT1  3
 #define LT2  2
-#define LT3  3
-#define LT4  4
+#define LT3  1
+#define LT4  0
 
 #define RT0  5   // right-top row
 #define RT1  6
@@ -90,11 +90,11 @@
 #define RT3  8
 #define RT4  9
 
-#define LM0 10   // left-middle row
-#define LM1 11
+#define LM0 14   // left-middle row
+#define LM1 13
 #define LM2 12
-#define LM3 13
-#define LM4 14
+#define LM3 11
+#define LM4 10
 
 #define RM0 15   // right-middle row
 #define RM1 16
@@ -102,11 +102,11 @@
 #define RM3 18
 #define RM4 19
 
-#define LB0 20   // left-bottom row
-#define LB1 21
+#define LB0 24   // left-bottom row
+#define LB1 23
 #define LB2 22
-#define LB3 23
-#define LB4 24
+#define LB3 21
+#define LB4 20
 
 #define RB0 25   // right-bottom row
 #define RB1 26
@@ -117,8 +117,8 @@
 #define LH0 30   // left thumb keys
 #define LH1 31
 
-#define RH0 32   // right thumb keys
-#define RH1 33
+#define RH0 33   // right thumb keys
+#define RH1 32
 
 #define KEYS_L LTP LTR LTM LTI LTC LMP LMR LMM LMI LMC LBP LBR LBM LBI LBC LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left-hand keys
 #define KEYS_R RTC RTI RTM RTR RTP RMC RMI RMM RMR RMP RBC RBI RBM RBR RBP RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
